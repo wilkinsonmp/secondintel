@@ -379,14 +379,6 @@ header{
   padding-right: 2.25rem;
   transition: transform 0.18s ease, background-color 0.18s ease;
 }
-.card-body d-flex flex-column {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* This prevents the image from distorting or changing card size */
-}
 
 .btn-learn::after {
   content: '→';
@@ -414,8 +406,8 @@ header{
   border-color: #00C7FD !important;
   color: #ffffff !important;
 }
-a.btn.btn-primary.btn-learn:hover,
-a.btn.btn-primary.btn-learn:focus {
+.btn.btn-primary.btn-learn:hover,
+.btn.btn-primary.btn-learn:focus {
   background-color: #00C7FD !important;
   border-color: #00C7FD !important;
   color: #ffffff !important;
@@ -429,13 +421,13 @@ a.btn.btn-primary.btn-learn:focus {
 .card h2.card-title-column {
   transition: color 0.18s ease;
 }
-a.card:hover h2.card-title-column {
+.card:hover h2.card-title-column {
   color:  #00C7FD !important;
 }
 .btn-learn::after {
   color: inherit;
 }
-a button :hover{
+button :hover{
 background-color: #00C7FD !important;
   border-color: #00C7FD !important;
   color: #ffffff !important;
@@ -455,7 +447,7 @@ background-color: #00C7FD !important;
   justify-content: center; 
 }
 .sub-logo{
- 
+  height: auto; 
   width: 100%;
   display: flex;
   align-items: right; 
